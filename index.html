@@ -9,25 +9,42 @@
   <body>
     <header>
       <span>Marlon</span>
-      <nav>
+      <box-icon name="menu" class="menu-burguer"></box-icon>
+
+      <nav class="hidden">
         <ul>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>SKILLS</li>
-          <li>WORKS</li>
-          <li>CONTACT</li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SKILLS</a></li>
+          <li><a href="#">WORKS</a></li>
+          <li><a href="">CONTACT</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="home">
-      <h1>
-        Hi, <br />
-        I`am <span>Marlon</span><br />
-        Web Designer
-      </h1>
+      <div>
+        <h1>
+          Hi, <br />
+          I`am <span>Marlon</span><br />
+          Web Designer
+        </h1>
 
-      <a href="#">Contact</a>
+        <a href="#" class="btn">Contact</a>
+      </div>
+
+      <div class="home-social">
+        <a href="http://linkedin.com" target="_blank"
+          ><box-icon name="linkedin" type="logo"></box-icon
+        ></a>
+        <a href="http://behance.com" target="_blank"
+          ><box-icon name="behance" type="logo"></box-icon
+        ></a>
+        <a href="http://github.com" target="_blank"
+          ><box-icon name="github" type="logo"></box-icon
+        ></a>
+      </div>
+
       <div class="img-perfil">
         <img src="img/perfil.png" alt="" />
       </div>
@@ -91,7 +108,21 @@
 
     <footer>
       <h2>Marlon</h2>
+      <div class="footer-social">
+        <a href="" class="footer-icon">
+          <box-icon name="facebook" type="logo"></box-icon>
+        </a>
+        <a href="" class="footer-icon">
+          <box-icon name="instagram" type="logo"></box-icon>
+        </a>
+        <a href="" class="footer-icon">
+          <box-icon name="twitter" type="logo"></box-icon>
+        </a>
+      </div>
+
       <p>&copy 2024 copyright all right reserved</p>
     </footer>
   </body>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="script.js"></script>
 </html>
