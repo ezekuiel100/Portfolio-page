@@ -38,7 +38,7 @@ h3 {
 
 img {
   display: block;
-  width: 20rem;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -101,10 +101,11 @@ nav.hidden {
 
 .home {
   position: relative;
+  max-width: 1024px;
   display: grid;
   row-gap: 6em;
   padding: 4rem 0.7rem;
-  margin: 0 0.5rem;
+  margin: 0 0.6rem;
 }
 
 .home h1 {
@@ -140,6 +141,11 @@ nav.hidden {
   margin: 4rem 0;
 }
 
+.about-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .about img {
   width: 15rem;
   border-radius: 5px;
@@ -152,6 +158,13 @@ nav.hidden {
 
 .skills {
   text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.skills-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .skills-container {
@@ -165,8 +178,8 @@ nav.hidden {
   position: relative;
   background-color: #fff;
   box-shadow: 0 0 5px #00000030;
-  margin: 1rem;
-  padding: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.8rem;
   font-weight: bold;
 }
 
@@ -240,7 +253,7 @@ footer h2 {
   }
 
   nav.hidden {
-    display: block;
+    display: flex;
   }
 
   nav ul {
@@ -274,6 +287,75 @@ footer h2 {
   }
 
   .home-social {
-    align-self: flex-end;
+    align-self: end;
   }
+}
+
+@media (min-width: 700px) {
+  .home h1 {
+    font-size: 2.7rem;
+  }
+
+  .home img {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .home img {
+    width: 400px;
+  }
+
+  .home .img-perfil {
+    bottom: 10%;
+  }
+}
+
+@media (min-width: 960px) {
+  header {
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+
+  header nav {
+    align-items: center;
+  }
+
+  .home {
+    margin: 0 auto;
+    padding: 7rem 0.7rem;
+  }
+
+  .home h1 {
+    font-size: 3.5rem;
+  }
+
+  .home img {
+    width: 450px;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+  }
+
+  .about img {
+    width: 300px;
+  }
+
+  .skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    text-align: initial;
+  }
+
+  /* .skills-wrapper img {
+    height: auto;
+    width: 100%;
+  } */
 }
